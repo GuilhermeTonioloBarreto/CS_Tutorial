@@ -68,7 +68,7 @@ class Variaveis{
 
     public static void variaveis5(){
         /*
-        * Outra forma de juntar estes textos é utilizando a interpolação de strings
+        * Uma segunda forma de juntar estes textos é utilizando a interpolação de strings
         */
 
         uint idade = 31;
@@ -99,5 +99,82 @@ class Variaveis{
         double pi = 3.14159265359;
         Console.WriteLine("Meu nome é {0} e tenho {1:000} anos", nomePessoa, idade);
         Console.WriteLine("O número PI é igual a {0:00.000}", pi);
+    }
+
+    public static void variaveis8(){
+        /*
+        * É possível realizar operações aritméticas entre variáveis
+        */
+        int a = 5;
+        int b = 10;
+
+        int soma = a + b;
+        Console.WriteLine("Soma: {0}", soma);
+
+        int subtracao = a - b;
+        Console.WriteLine("Subtração: {0}", subtracao);
+
+        int multiplicacao = a * b;
+        Console.WriteLine("Multiplicação: {0}", multiplicacao);
+
+        int divisao = a / b;
+        Console.WriteLine("Divisão: {0}", divisao);
+
+        int moduloDivisao = a % b;
+        Console.WriteLine("Módulo da divisão: {0}", moduloDivisao);
+    }
+
+    public static void variaveis9(){
+        /*
+        * Quando se deseja realizar uma operação aritmética entre seu próprio valor, 
+        * é possível utilizar operadores de atribuição composta
+        */
+
+        int numero = 15;
+        Console.WriteLine("Número inicial: {0}", numero);
+
+        numero += 5;
+        Console.WriteLine("O número foi somado por 5. Agora ele é igual a {0}", numero);
+
+        numero -= 4;
+        Console.WriteLine("O número foi subtraído por 4. Agora ele é igual a {0}", numero);
+
+        numero *= 3;
+        Console.WriteLine("O número foi multiplicado por 3. Agora ele é igual a {0}", numero);
+
+        numero /= 2;
+        Console.WriteLine("O número foi dividido por 2. Agora ele é igual a {0}", numero);
+    }
+
+    public static void variaveis10(){
+        /*
+        * Quando se deseja apenas incrementar uma unidade no valor da sua variável, 
+        * é possível utilizar operadores de incremento.
+        */
+
+        int numero = 15;
+        Console.WriteLine("Número inicial: {0}", numero);
+
+        numero++;
+        Console.WriteLine("O número foi incrementado uma unidade. Agora ele é igual a {0}", numero);
+
+        numero--;
+        Console.WriteLine("O número foi decrementado uma unidade. Agora ele é igual a {0}", numero);
+    }
+
+    public static void variaveis11(){
+        /*
+        É possível realizar operações lógicas entre variáveis
+        ! = NOT lógico (utilizado para variáveis do tipo bool)
+        & = AND lógico (utilizado para variáveis do tipo bool ou inteiro)
+        | = OR lógico (utilizado para variáveis do tipo bool ou inteiro)
+        ^ = XOR lógico (utilizado para variáveis do tipo bool ou inteiro)
+        */
+
+        bool bool1 = false;
+        Console.WriteLine("Valor da variável original: {0}", bool1);
+
+        bool bool2 = !bool1;
+        Console.WriteLine("Valor da variável invertida: {0}", bool2);
     }
 }
