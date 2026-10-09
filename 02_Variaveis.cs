@@ -164,17 +164,122 @@ class Variaveis{
 
     public static void variaveis11(){
         /*
-        É possível realizar operações lógicas entre variáveis
-        ! = NOT lógico (utilizado para variáveis do tipo bool)
-        & = AND lógico (utilizado para variáveis do tipo bool ou inteiro)
-        | = OR lógico (utilizado para variáveis do tipo bool ou inteiro)
-        ^ = XOR lógico (utilizado para variáveis do tipo bool ou inteiro)
+        * É possível realizar operações lógicas entre variáveis
+        * ! = NOT lógico (utilizado para variáveis do tipo bool)
+        * & = AND lógico (utilizado para variáveis do tipo bool ou inteiro)
+        * | = OR lógico (utilizado para variáveis do tipo bool ou inteiro)
+        * ^ = XOR lógico (utilizado para variáveis do tipo bool ou inteiro)
         */
 
         bool bool1 = false;
-        Console.WriteLine("Valor da variável original: {0}", bool1);
-
         bool bool2 = !bool1;
-        Console.WriteLine("Valor da variável invertida: {0}", bool2);
+        Console.WriteLine("Operação lógica NOT na variável {0}: {1}", bool1, bool2);
+        Console.WriteLine();
+
+        int inteiro1 = 54;
+        int inteiro2 = 101;
+
+        // inteiro1 = 54 (decimal)  = 0011 0110 (binario)
+        // inteiro2 = 101 (decimal) = 0110 0101 (binario)
+        // inteiro1 & inteiro2      = 0010 0100 (binario) = 36 (decimal) 
+        int resultadoAnd = inteiro1 & inteiro2;
+        Console.WriteLine("Operação lógica AND entre {0} e {1}: {2}", 
+            inteiro1, inteiro2, resultadoAnd);
+        Console.WriteLine();
+
+        // inteiro1 = 54 (decimal)  = 0011 0110 (binario)
+        // inteiro2 = 101 (decimal) = 0110 0101 (binario)
+        // inteiro1 | inteiro2      = 0111 0111 (binario) = 119 (decimal) 
+        int resultadoOr = inteiro1 | inteiro2;
+        Console.WriteLine("Operação lógica OR entre {0} e {1}: {2}", 
+            inteiro1, inteiro2, resultadoOr);
+        Console.WriteLine();
+
+        // inteiro1 = 54 (decimal)  = 0011 0110 (binario)
+        // inteiro2 = 101 (decimal) = 0110 0101 (binario)
+        // inteiro1 | inteiro2      = 0101 0011 (binario) = 83 (decimal) 
+        int resultadoXor = inteiro1 ^ inteiro2;
+        Console.WriteLine("Operação lógica XOR entre {0} e {1}: {2}", 
+            inteiro1, inteiro2, resultadoXor);
+        Console.WriteLine();
+    }
+
+    public static void variaveis12(){
+        /*
+        * Variaveis do tipo int podem ser convertidas para o tipo double 
+        * de forma implícita ou explicita, sem perda de dados
+        */
+
+        Console.WriteLine("Conversão de valores do tipo int para double:");
+
+        int idadeInt = 32;
+        Console.WriteLine("Idade (Int): {0}", idadeInt);
+        
+        // Conversão implícita
+        double idadeDouble1 = idadeInt;
+        Console.WriteLine("Idade (double - conversão implícita): {0}", idadeDouble1);
+        
+        // Conversão explicita
+        double idadeDouble2 = (double) idadeInt;
+        Console.WriteLine("Idade (double - conversão explícita): {0}", idadeDouble2);
+        Console.WriteLine();
+
+        /*
+        * Variaveis do tipo double só podem ser convertidas para o tipo int explicitamente, 
+        * com perda de dados. Os valores depois da vírgula são então truncados
+        */
+
+        Console.WriteLine("Conversão de valores do tipo double para int:");
+
+        double salarioDouble = 1403.76;
+        Console.WriteLine("Salario (double): {0}", salarioDouble);
+
+        // Conversão explicita
+        int salarioInt = (int) salarioDouble;
+        Console.WriteLine("Salario (int - conversão explícita): {0}", salarioInt);
+        Console.WriteLine();
+
+        /*
+        * Para converter variáveis numéricas (int e double) para o tipo string, 
+        utiliza-se o método ToString()
+        */
+
+        Console.WriteLine("Conversão de valores do tipo int e double para o tipo string:");
+
+        string nome = "Toniolo";
+        int idade = 31;
+        double salario = 1600.78;
+
+        string apresentacao =
+            "meu nome é " + nome + ", " +
+            "tenho " + idade.ToString() + "anos e " +
+            "meu salaário é igual a " + salario.ToString() + " reais";
+        Console.WriteLine(apresentacao);
+        Console.WriteLine();
+
+        /*
+        * Para converter variáveis do tipo string para o tipo numérico, 
+        * utiliza-se o método Parse()
+        */
+
+        Console.WriteLine("Conversão de valores do tipo string para os tipos int e double:");
+
+        string idadeString = "31";
+        string salarioString = "1600,78";
+
+        idadeInt = int.Parse(idadeString);
+        Console.WriteLine(idadeInt);
+
+        salarioDouble = double.Parse(salarioString);
+        Console.WriteLine(salarioDouble);
+        
+        
+
+
+
+
+
+
+        
     }
 }
