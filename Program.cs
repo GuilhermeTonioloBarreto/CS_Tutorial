@@ -6,8 +6,8 @@ namespace Namespace1
     {
         static void Main(string[] args)
         {
-            //ExibicaoDeTexto.exibicaoDeTexto1();
-            //ExibicaoDeTexto.exibicaoDeTexto2();
+            //Console1.console1();
+            //Console1.console2();
 
             //Variaveis.variaveis1();
             //Variaveis.variaveis2();
@@ -21,6 +21,15 @@ namespace Namespace1
             //Variaveis.variaveis10();
             //Variaveis.variaveis11();
             //Variaveis.variaveis12();
-            Variaveis.variaveis13();
-        }    }
+            
+            //Console2.console1();
+            //Console2.console2();
+            //Console2.console3();
+            //Console2.console4();
+            //Console2.console5();
+            //Console2.console6();
+            //Console2.console7();
+            Console2.console8();
+        }    
+    }
 }

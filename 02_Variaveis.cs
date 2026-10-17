@@ -273,22 +273,4 @@ class Variaveis{
         salarioDouble = double.Parse(salarioString);
         Console.WriteLine(salarioDouble);        
     }
-
-    public static void variaveis13(){
-        /* 
-        * Para que o usuário digite apenas um caractere do teclado no CLI,
-        * utiliza-se o método Console.Read()
-        * Perceba que o valor digitado no teclado será atribuído a uma variável int,
-        * mesmo que seja uma letra do alfabeto. A razão para isso é que este método 
-        * armazena o código numérico ASCII daquela tecla do teclado
-        * Por exemplo, ao digitar a letra A, o valor lido pelo programa será 65
-        * Caso sejam digitados mais de um caractere antes de pressionar o enter, 
-        * o Console.Read() considerará apenas o primeiro caractere digitado
-        */
-
-        Console.WriteLine("Digite um caractere do teclado:");
-        int teclaTeclado = Console.Read();
-        Console.WriteLine("A tecla digitada foi {0}", teclaTeclado);
-    }
-    
 }

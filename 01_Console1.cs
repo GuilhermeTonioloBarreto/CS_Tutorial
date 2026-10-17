@@ -1,5 +1,5 @@
-class ExibicaoDeTexto{
-    public static void exibicaoDeTexto1(){
+class Console1{
+    public static void console1(){
         /*
         * É possível exibir mensagens no terminal CLI utilizando o método Console.WriteLine()
         */
@@ -8,7 +8,7 @@ class ExibicaoDeTexto{
         Console.WriteLine("Tudo bem com você?");
     }
 
-    public static void exibicaoDeTexto2(){
+    public static void console2(){
         /*
         * Toda vez que o método Console.WriteLine() é utilizado, uma quebra de linha é 
         * realizada. Caso deseje que não ocorra esta quebra de linha, 
