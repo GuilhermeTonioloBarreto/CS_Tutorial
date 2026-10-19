@@ -1,6 +1,6 @@
-class Calculadora
+class Calculadora1
 {
-    public static void calculadora()
+    public static void calculadora1()
     {
         /*
         * Programa que recebe dois números e retorna as operações algébricas básicas

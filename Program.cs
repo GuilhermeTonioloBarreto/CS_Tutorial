@@ -31,7 +31,8 @@ namespace Namespace1
             //Console2.console7();
             //Console2.console8();
 
-            //Calculadora.calculadora();
+            //Calculadora1.calculadora1();
+
             //EstruturaDeDecisao.estruturaDeDecisao1();
             //EstruturaDeDecisao.estruturaDeDecisao2();
 
@@ -39,7 +40,9 @@ namespace Namespace1
             //EstruturaDeRepeticao.estruturaDeRepeticao2();
             //EstruturaDeRepeticao.estruturaDeRepeticao3();
             //EstruturaDeRepeticao.estruturaDeRepeticao4();
-            EstruturaDeRepeticao.estruturaDeRepeticao5();
+            //EstruturaDeRepeticao.estruturaDeRepeticao5();
+
+            Calculadora2.calculadora2();
         }    
     }
 }
