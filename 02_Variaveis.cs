@@ -1,6 +1,7 @@
 class Variaveis{
     
-    public static void variaveis1(){
+    public static void variaveis1()
+    {
         /*
         * A tabela abaixo mostra as variáveis mais utilizadas em C#:
         *
@@ -30,7 +31,8 @@ class Variaveis{
         string nomePessoa;
     }
 
-    public static void variaveis2(){
+    public static void variaveis2()
+    {
         /*
         * A atribuição de variáveis é feita utilizando o operador =
         */
@@ -41,7 +43,8 @@ class Variaveis{
 
     }
 
-    public static void variaveis3(){
+    public static void variaveis3()
+    {
         /*
         * É possível exibir variáveis utilizando o método Console.WriteLine()
         */
@@ -55,7 +58,8 @@ class Variaveis{
         Console.WriteLine(nomePessoa);
     }
 
-    public static void variaveis4(){
+    public static void variaveis4()
+    {
         /*
         * É possível juntar textos com valores de variáveis utilizando concatenação de strings
         */
@@ -66,7 +70,8 @@ class Variaveis{
         Console.WriteLine("Meu nome é " + nomePessoa + " e tenho " + idade + " anos");
     }
 
-    public static void variaveis5(){
+    public static void variaveis5()
+    {
         /*
         * Uma segunda forma de juntar estes textos é utilizando a interpolação de strings
         */
@@ -77,7 +82,8 @@ class Variaveis{
         Console.WriteLine($"Meu nome é {nomePessoa} e tenho {idade} anos");
     }
 
-    public static void variaveis6(){
+    public static void variaveis6()
+    {
         /*
         * Uma terceira forma de juntar estes texto é utilizando a formatação composta
         */
@@ -88,7 +94,8 @@ class Variaveis{
         Console.WriteLine("Meu nome é {0} e tenho {1} anos", nomePessoa, idade);
     }
 
-    public static void variaveis7(){
+    public static void variaveis7()
+    {
         /*
         * A vantagem da formatação composta é que é possível editar quantos números 
         * antes e depois da vírgula serão exibidos
@@ -101,7 +108,8 @@ class Variaveis{
         Console.WriteLine("O número PI é igual a {0:00.000}", pi);
     }
 
-    public static void variaveis8(){
+    public static void variaveis8()
+    {
         /*
         * É possível realizar operações aritméticas entre variáveis
         */
@@ -124,7 +132,8 @@ class Variaveis{
         Console.WriteLine("Módulo da divisão: {0}", moduloDivisao);
     }
 
-    public static void variaveis9(){
+    public static void variaveis9()
+    {
         /*
         * Quando se deseja realizar uma operação aritmética entre seu próprio valor, 
         * é possível utilizar operadores de atribuição composta
@@ -146,7 +155,8 @@ class Variaveis{
         Console.WriteLine("O número foi dividido por 2. Agora ele é igual a {0}", numero);
     }
 
-    public static void variaveis10(){
+    public static void variaveis10()
+    {
         /*
         * Quando se deseja apenas incrementar uma unidade no valor da sua variável, 
         * é possível utilizar operadores de incremento.
@@ -162,7 +172,8 @@ class Variaveis{
         Console.WriteLine("O número foi decrementado uma unidade. Agora ele é igual a {0}", numero);
     }
 
-    public static void variaveis11(){
+    public static void variaveis11()
+    {
         /*
         * É possível realizar operações lógicas entre variáveis
         * ! = NOT lógico (utilizado para variáveis do tipo bool)
@@ -204,7 +215,8 @@ class Variaveis{
         Console.WriteLine();
     }
 
-    public static void variaveis12(){
+    public static void variaveis12()
+    {
         /*
         * Variaveis do tipo int podem ser convertidas para o tipo double 
         * de forma implícita ou explicita, sem perda de dados

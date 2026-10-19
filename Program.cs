@@ -29,7 +29,17 @@ namespace Namespace1
             //Console2.console5();
             //Console2.console6();
             //Console2.console7();
-            Console2.console8();
+            //Console2.console8();
+
+            //Calculadora.calculadora();
+            //EstruturaDeDecisao.estruturaDeDecisao1();
+            //EstruturaDeDecisao.estruturaDeDecisao2();
+
+            //EstruturaDeRepeticao.estruturaDeRepeticao1();
+            //EstruturaDeRepeticao.estruturaDeRepeticao2();
+            //EstruturaDeRepeticao.estruturaDeRepeticao3();
+            //EstruturaDeRepeticao.estruturaDeRepeticao4();
+            EstruturaDeRepeticao.estruturaDeRepeticao5();
         }    
     }
 }
